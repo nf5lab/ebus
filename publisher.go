@@ -15,7 +15,10 @@ type Publisher interface {
 	// Publish 发布事件
 	Publish(ctx context.Context, topic string, event Event) error
 
-	// Close 关闭发布者
+	// Close 关闭发布者 (不会执行任何操作)
+	//
+	// Deprecated: 此方法已废弃, 将在未来版本中移除
+	// ebus.Publisher 不应该管理底层资源的生命周期
 	Close() error
 }
 
@@ -91,7 +94,10 @@ func (pub *publisher) Publish(ctx context.Context, topic string, event Event) er
 	return nil
 }
 
-// Close 关闭发布者
+// Close 关闭发布者 (不会执行任何操作)
+//
+// Deprecated: 此方法已废弃, 将在未来版本中移除
+// ebus.Publisher 不应该管理底层资源的生命周期
 func (pub *publisher) Close() error {
-	return pub.inner.Close()
+	return nil
 }

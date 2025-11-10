@@ -25,7 +25,10 @@ type Subscriber interface {
 	// Unsubscribe 取消订阅
 	Unsubscribe(ctx context.Context, subscriptionId string) error
 
-	// Close 关闭订阅者
+	// Close 关闭订阅者 (不会执行任何操作)
+	//
+	// Deprecated: 此方法已废弃, 将在未来版本中移除
+	// ebus.Subscriber 不应该管理底层资源的生命周期
 	Close() error
 }
 
@@ -171,7 +174,10 @@ func (sub *subscriber) Unsubscribe(ctx context.Context, subscriptionId string) e
 	return sub.inner.Unsubscribe(ctx, subscriptionId)
 }
 
-// Close 关闭订阅者
+// Close 关闭订阅者 (不会执行任何操作)
+//
+// Deprecated: 此方法已废弃, 将在未来版本中移除
+// ebus.Subscriber 不应该管理底层资源的生命周期
 func (sub *subscriber) Close() error {
-	return sub.inner.Close()
+	return nil
 }
