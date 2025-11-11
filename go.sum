@@ -2,3 +2,5 @@ github.com/nf5lab/broker v0.2.0 h1:lNZoYXnYAG+Ni5ljJLugeWe7DYQ9V9kqG2nLSmOlIqQ=
 github.com/nf5lab/broker v0.2.0/go.mod h1:50s7FXueQDGKn/ht9kdRAxc9RCCLx1viKMKGwk5BzZ8=
 github.com/nf5lab/broker v0.3.0 h1:Kr2Uvyr2GGkLmV7uD6Oj0kEdrXDcz6fbZ2WYzYAi2xc=
 github.com/nf5lab/broker v0.3.0/go.mod h1:50s7FXueQDGKn/ht9kdRAxc9RCCLx1viKMKGwk5BzZ8=
+github.com/nf5lab/broker v0.4.0 h1:vTk9A6biMsV+oZBnKdO9S40z19EeUenARH00ol103tc=
+github.com/nf5lab/broker v0.4.0/go.mod h1:50s7FXueQDGKn/ht9kdRAxc9RCCLx1viKMKGwk5BzZ8=
